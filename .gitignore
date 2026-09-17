@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.Rproj.user/
+.Rhistory
+.vscode/
+
+# local environments
+venv/
+.venv/
+env/

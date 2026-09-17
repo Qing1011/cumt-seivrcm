@@ -1,0 +1,12 @@
+# Python packages used by the notebooks and modules in this repository.
+# Developed with Python 3.11 (see codes/__pycache__ in the original project).
+numpy
+pandas
+scipy
+matplotlib
+pyarrow          # reading/writing the SMH parquet submission files
+jupyter          # to run the notebooks
+# Only 07_npi_stringency.ipynb imports the two packages below and does not
+# actually use them; they can be skipped if the imports are removed.
+geopandas
+h5py
