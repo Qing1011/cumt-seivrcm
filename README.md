@@ -4,6 +4,38 @@ Code, notebooks and intermediate data used by the Columbia University Modelling 
 (`cumt`, model `seivrcm`) for the COVID-19 Scenario Modeling Hub *Disparities* round
 (California = location `06`, North Carolina = location `37`).
 
+## Project context
+
+This repository contains the Columbia University Modelling Team contribution to the
+[COVID-19 Scenario Modeling Hub Research repository](https://github.com/midas-network/covid19-smh-research/),
+specifically its **Heterogeneities Round**. The research round was designed to expand
+multi-model capacity for representing differences in COVID-19 transmission and severity
+among racial/ethnic populations and to estimate how much disease burden might have been
+averted if those heterogeneities had been reduced.
+
+The round focused on California and North Carolina and comprised two phases:
+
+- **Phase 1 — prediction:** calibrate to race/ethnicity-specific case and death data through
+  November 14, 2020, then project weekly infections and deaths from November 15, 2020,
+  through April 3, 2021 under observed heterogeneities.
+- **Phase 2 — retrospective counterfactual analysis:** calibrate through April 3, 2021, and
+  compare observed heterogeneities (Scenario A) with reduced non-household transmission
+  heterogeneity (B), reduced age-adjusted severity heterogeneity (C), and both reductions
+  together (D).
+
+Official project resources:
+
+- [SMH Research repository and Heterogeneities Round description](https://github.com/midas-network/covid19-smh-research/)
+- [Phase 1 round specification](https://github.com/midas-network/covid19-smh-research/blob/main/auxiliary-data/rounds/round1_phase1.md)
+- [Phase 2 round specification](https://github.com/midas-network/covid19-smh-research/blob/main/auxiliary-data/rounds/round1_phase2.md)
+- [SMH Research model outputs](https://github.com/midas-network/covid19-smh-research/tree/main/model-output)
+- [SMH Research target data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data)
+
+For background on the broader Scenario Modeling Hub approach, see
+[“Evaluation of the US COVID-19 Scenario Modeling Hub for informing pandemic response under uncertainty”](https://doi.org/10.1038/s41467-023-42680-x).
+This is a general SMH publication; the official research repository does not currently
+identify a publication specific to this Heterogeneities Round or to the CUMT-SEIVRCM model.
+
 * **Model**: Susceptible-Exposed-Infected-Vaccinated-Recovered (SEIVR) compartments per
   race/ethnicity, coupled through a normalised contact matrix. Transmission rates (beta) vary by
   race/ethnicity and by 28-day window; the initial seeds and the betas are fitted to weekly deaths
